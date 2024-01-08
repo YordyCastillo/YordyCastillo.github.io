@@ -2,26 +2,324 @@
 <html>
 <head>
     <title>Yordy Castillo's Portfolio</title>
-    <!-- Add CSS Links if needed -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3, h4 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #01447e;
+        }
+
+        #about-me img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 200px;
+        }
+
+        .project {
+            background-color: #e7e7e7;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .analysis-results {
+            background-color: #d7d7d7;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 200px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Projects</h1>
 
-    <!-- Project 1 -->
-    <div class="project">
-        <h2>Project Name</h2>
-        <p>Brief description of the project.</p>
-        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-        <p><strong>Just seeing if this is changing:</strong> HTML, CSS, JavaScript</p>
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <img src="https://raw.githubusercontent.com/YordyCastillo/YordyCastillo.github.io/master/images/yordy%20LI%20pic.jpg" alt="Yordy Castillo">
+            <p>
+                As a passionate coder and data enthusiast with a computer science background, I excel in developing innovative software and insightful data analytics. My expertise spans complex data interpretation, big data, and cloud computing. I'm adept at crafting tailored solutions to meet business needs, presenting compelling analytics, and engaging stakeholders. Committed to continuous learning and collaboration, I thrive in fast-paced environments, bringing a keen eye for detail and a problem-solving mindset to drive actionable insights and shape the future of software and data solutions.
+            </p>
+        </section>
 
-        <p><a href="URL to Project Repo">View on GitHub</a></p>
-        <p><a href="URL to Live Demo">Live Demo</a></p>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
 
-    <!-- Repeat the above block for each project -->
+        <!-- Project 1 -->
+        <!-- Project 1: Jersey City Airbnb Analysis -->
+        <div class="project">
+            <h3>Jersey City Airbnb Analysis</h3>
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*QXQREdY_DcwzE8WX7PGuaw.jpeg" alt="Description of Image" style="width: 100%; max-width: 600px; height: auto;">
+            <p>This repository contains an analysis of Jersey City's Airbnb listings. The analysis explores various aspects of the listings, including popular neighborhoods, pricing factors, and the impact of amenities. It follows the CRISP-DM process and utilizes Python for data analysis and visualization.</p>
+            
+            <h4>Libraries Used</h4>
+            <ul>
+                <li>Pandas: for data manipulation and analysis</li>
+                <li>Matplotlib and Seaborn: for data visualization</li>
+                <li>NumPy: for mathematical operations</li>
+                <li>Scikit-learn: for building predictive models (if applicable)</li>
+            </ul>
 
-    <!-- Add more content or sections as needed -->
+            <h4>Motivation</h4>
+            <p>As a frequent traveler, I’m always on the lookout for unique and affordable places to stay. Jersey City, with its prime location and diverse neighborhoods, has become a popular destination for tourists. This analysis aims to provide insights into the city's Airbnb scene, helping travelers find the perfect spot to rest their head. Additionally, considering the ongoing COVID-19 pandemic, the analysis also explores how the pandemic has impacted the city's Airbnb listings.</p>
+
+            <!-- Analysis Results Section -->
+        <div class="analysis-results">
+            <h4>Analysis Results</h4>
+            <p>The analysis addresses several key questions:</p>
+            <ul>
+                <li><strong>Popular Neighborhoods:</strong> What are the most popular neighborhoods for Airbnb listings in Jersey City?</li>
+                <li><strong>Price vs. Reviews:</strong> Is there a correlation between the price of a listing and the number of reviews it has received?</li>
+                <li><strong>Amenities Impact:</strong> How do the amenities and features of Jersey City Airbnb listings impact the price and popularity of the listing?</li>
+            </ul>
+
+            <p>The results of the analysis are summarized as follows:</p>
+            <ul>
+                <li><strong>Bergen-Lafayette:</strong> The most popular neighborhood for Airbnb listings in Jersey City, with the highest number of listings.</li>
+                <li><strong>Price-Review Correlation:</strong> There is no notable correlation between the price of a listing and the number of reviews it has received.</li>
+                <li><strong>Amenities and Pricing:</strong> The presence of amenities impacts the pricing of listings, with more amenities commanding higher prices.</li>
+            </ul>
+
+            <p> For detailed analysis and visualizations, refer to the accompanying blog post and Jupyter Notebook.</p>
+        </div>
+
+
+            <p><a href="https://github.com/YordyCastillo/Airbnb_jerseycity">View on GitHub</a></p>
+            <p><a href="https://github.com/YordyCastillo/Airbnb_jerseycity/blob/main/jersey%20city%20analysis.ipynb">View Jupyter Notebook</a></p>
+            <p><a href="https://medium.com/@yordyjc24/beyond-the-bridges-what-we-learned-from-analyzing-jersey-citys-airbnb-listings-bd9bf5850578">Read the Blog Post</a></p>
+        </div>
+        <hr>
+        <div class="project">
+            <h3>Disaster Response Pipeline Project</h3>
+            <p>This project is part of the Disaster Response Pipeline project from Udacity's Data Science Nanodegree program. The goal is to build a web application that classifies messages related to disasters into different categories for quick identification and response during emergencies.</p>
+        
+            <h4>Main Components</h4>
+            <ul>
+                <li><strong>ETL Pipeline:</strong> Cleans and preprocesses the message and category data, storing it in a SQLite database.</li>
+                <li><strong>ML Pipeline:</strong> Trains a machine learning model to classify messages into categories. The trained model is saved for future use.</li>
+                <li><strong>Web Application:</strong> Provides a UI where users can enter messages and get them classified. It also displays visualizations from the SQLite database data.</li>
+            </ul>
+        
+            <h4>Dependencies</h4>
+            <ul>
+                <li>Python 3.x</li>
+                <li>Data manipulation and analysis libraries: NumPy, Pandas</li>
+                <li>Machine learning libraries: Scikit-learn (version 0.24.2 or higher)</li>
+                <li>Natural language processing libraries: NLTK</li>
+                <li>SQLite database library: SQLAlchemy</li>
+                <li>Web framework: Flask</li>
+                <li>Data visualization libraries: Plotly</li>
+            </ul>
+            <div class="image-row">
+                <img src="https://github.com/YordyCastillo/Disaster-Response-Pipeline/raw/main/newplot%20(1).png" alt="Description of First Image" style="width: 700px; height: auto;">
+                <img src="https://github.com/YordyCastillo/Disaster-Response-Pipeline/raw/main/newplot%20(2).png" alt="Description of Second Image"style="width: 700px; height: auto;">
+                <img src="https://github.com/YordyCastillo/Disaster-Response-Pipeline/raw/main/newplot%20(3).png" alt="Description of Third Image"style="width: 700px; height: auto;">
+            </div>
+            
+            <p><a href="https://github.com/YordyCastillo/Disaster-Response-Pipeline">View on GitHub</a></p>
+        </div>
+        
+        <!-- Horizontal Line for separating projects -->
+        <hr>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Chicago Data Analysis Project</title>
+            <style>
+                .section-box {
+                    background-color: #f0f0f0;
+                    border-radius: 8px;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="section-box">
+                <h2>Introduction</h2>
+                <p>Scenario: I have been hired by an organization that strives to improve educational outcomes for children and young people in Chicago. My job is to analyze census, crime, and school data for a given neighborhood or district. I will identify causes that impact the enrollment, safety, health, environment ratings of schools. I am required to answer questions similar to what a real-life data analyst or data scientist would be tasked with</p>
+            </div>
+        
+            <div class="section-box">
+                <h2>Understand the Datasets</h2>
+                <p>To complete the assignment problems in this notebook, you will be using three datasets available on the city of Chicago's Data Portal:</p>
+                <ol>
+                    <li>
+                        <strong>Socioeconomic Indicators in Chicago</strong>: This dataset contains a selection of six socioeconomic indicators of public health significance and a “hardship index,” for each Chicago community area, for the years 2008 – 2012. 
+                        <a href="https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2">Dataset link</a>
+                    </li>
+                    <li>
+                        <strong>Chicago Public Schools</strong>: This dataset shows all school level performance data used to create CPS School Report Cards for the 2011-2012 school year.
+                        <a href="https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t">Dataset link</a>
+                    </li>
+                    <li>
+                        <strong>Chicago Crime Data</strong>: This dataset reflects reported incidents of crime that occurred in the City of Chicago from 2001 to present.
+                        <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2">Dataset link</a>
+                    </li>
+                </ol>
+            </div>
+        
+            <div class="section-box">
+                <h2>Problem 1</h2>
+                <img src="https://github.com/YordyCastillo/YordyCastillo.github.io/blob/master/images/problem%208.png?raw=true" alt="Description of First Image" style="width: 700px; height: auto;">
+            </div>
+        
+            <div class="section-box">
+                <h2>Problem 2</h2>
+                <img src="https://github.com/YordyCastillo/YordyCastillo.github.io/blob/master/images/problem%207.png?raw=true" alt="Problem 2 Screenshot" style="width:100%;max-width:600px;height:auto;">
+            </div>
+        
+            <div class="section-box">
+                <h2>Problem 3</h2>
+                <img src="https://github.com/YordyCastillo/YordyCastillo.github.io/blob/master/images/problem%2010.png?raw=true" alt="Problem 3 Screenshot" style="width:100%;max-width:600px;height:auto;">
+            </div>
+            <p><a href="https://github.com/YordyCastillo/Chicago_Neighborhoods_SQL_Analysis/blob/main/Chicago%20neighborhood%20sql%20analysis%20.ipynb">View on GitHub</a></p>
+        </body>
+        </html>
+        
+        <hr>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>San Francisco Crime Analysis Project</title>
+            <style>
+                .section-box {
+                    background-color: #f0f0f0;
+                    border-radius: 8px;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                }
+
+                .image-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                .image-container img {
+                    width: auto;
+                    height: 200px;
+                    max-width: 100%;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="section-box">
+                <h2>Exploring Crime Trends in San Francisco</h2>
+                <p>
+                    In this project, I delve into the intricate details of San Francisco's crime landscape during the 2018-2019 period. Renowned for its vibrant cultural, commercial, and financial significance in Northern California, San Francisco stands as the 13th-most populous city in the United States, boasting a diverse population of over 880,000 residents within its 46.89 square miles territory.
+                </p>
+                <p>
+                    The dataset, a comprehensive aggregation of crime reports, has been sourced from Kaggle. It offers a window into various aspects of urban safety and law enforcement in this bustling metropolis.
+                </p>
+                <p><strong>Dataset Source:</strong> <a href="https://www.kaggle.com/roshansharma/sanfranciso-crime-dataset/">San Francisco Crime Dataset on Kaggle</a></p>
+        
+                <h3>Project Objectives and Motivation</h3>
+                <p>
+                    The core objectives of this analysis are to uncover patterns and insights related to crime across different districts, identify variations in crime occurrence throughout the week, and understand the time of day when crimes are most prevalent. As a computer science graduate on the cusp of entering the professional world, where San Francisco is a key tech hub, I am particularly interested in understanding the city's safety dynamics. This analysis aims to shed light on neighborhood-specific crime trends, potentially influencing residential and professional decisions for those working in or considering moving to the city.
+                </p>
+            </div>
+
+            <!-- Key Insights from San Francisco Crime Analysis Section -->
+            <div class="analysis-results">
+                <h4>Key Insights from San Francisco Crime Analysis</h4>
+
+                <p>The analysis highlights several key aspects:</p>
+                <ul>
+                    <li><strong>Predominance of Assault:</strong> Assault emerges as the most frequently committed crime in San Francisco, indicating a significant concern for physical safety in the city.</li>
+                    <li><strong>District-wise Crime Distribution:</strong> The Tenderloin district records the highest incidence of crime, starkly contrasting with McLaren Park, which boasts the lowest crime rates. This highlights the varying safety landscapes across different neighborhoods.</li>
+                    <li><strong>Temporal Patterns of Crime:</strong> A notable surge in criminal activity is observed around noon, suggesting a midday peak in offenses. Conversely, the early hours of the morning, particularly around 5 AM, tend to be the calmest. Additionally, Fridays witness the highest concentration of criminal acts, pointing to a weekly cycle in crime occurrence.</li>
+                </ul>
+
+                <p>These insights provide a comprehensive view of the crime situation in San Francisco, shedding light on the areas and times where crime is most prevalent.</p>
+            </div>
+
+
+            <!-- Image Visualization Section -->
+            <section id="visualization">
+                <div class="image-container">
+                    <img src="https://github.com/YordyCastillo/san_fran-crime-rate/blob/main/sanfran_crime_project_files/figure-gfm/unnamed-chunk-3-1.png?raw=true" alt="First Visualization">
+                    <img src="https://github.com/YordyCastillo/san_fran-crime-rate/blob/main/sanfran_crime_project_files/figure-gfm/unnamed-chunk-3-2.png?raw=true" alt="Second Visualization">
+                    <img src="https://github.com/YordyCastillo/san_fran-crime-rate/blob/main/sanfran_crime_project_files/figure-gfm/unnamed-chunk-3-3.png?raw=true" alt="Second Visualization">
+                    <img src="https://github.com/YordyCastillo/san_fran-crime-rate/blob/main/sanfran_crime_project_files/figure-gfm/unnamed-chunk-3-4.png?raw=true" alt="Third Visualization">
+                </div>
+            </section>
+        </body>
+        </html>
+
+            
+               
+        
+    </section>
 
 </body>
 </html>
+
+
 
